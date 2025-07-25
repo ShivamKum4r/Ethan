@@ -10,7 +10,7 @@ Together, these two projects demonstrate the fusion of **embedded hardware**, **
 ## 📸 Project Demo
 
 <p align="center">
-  <img src="Public/video_20230905_165739.mp4" alt="Ethan AI Robot" width="400"/>
+   <img src="Public/video_20230905_165739-ezgif.com-optimize.gif" alt="Ethan Voice Assistant Demo" width="400"/>
   <img src="Public/IMG_20231203_172813 (1).jpg" alt="Ethan AI Robot" width="400"/>
 </p>
 
