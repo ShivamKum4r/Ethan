@@ -10,8 +10,7 @@ Together, these two projects demonstrate the fusion of **embedded hardware**, **
 ## 📸 Project Demo
 
 <p align="center">
-  <img src="media/e3n_demo.jpg" alt="E3N AI Assistant" width="400"/>
-  <img src="media/ethan_robot.jpg" alt="Ethan AI Robot" width="400"/>
+  <img src="public/ethan.jpg" alt="Ethan AI Robot" width="400"/>
 </p>
 
 > *Left: E3N Voice Assistant UI*  
