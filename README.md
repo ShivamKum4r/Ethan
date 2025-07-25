@@ -10,6 +10,7 @@ Together, these two projects demonstrate the fusion of **embedded hardware**, **
 ## 📸 Project Demo
 
 <p align="center">
+  <img src="Public/video_20230905_165739.mp4" alt="Ethan AI Robot" width="400"/>
   <img src="Public/IMG_20231203_172813 (1).jpg" alt="Ethan AI Robot" width="400"/>
 </p>
 
@@ -24,45 +25,6 @@ Together, these two projects demonstrate the fusion of **embedded hardware**, **
 |--------|-------------|
 | 🧍‍♂️ **Ethan (Robot)** | A physical robot made from e-waste with speech-based interaction and IoT motion |
 | 💬 **E3N (Voice Assistant)** | A software assistant with TTS, STT, and web-based AI integration via Pi.ai |
-## 📁 Project Structure
-
-F:\E3N\
-├── 📁 Project Root
-│   ├── 📄 ar.py                    # Audio Recognition & Pi.ai Integration
-│   ├── 📄 communicate.py           # Edge TTS Communication Module
-│   ├── 📄 update.py                # Video Playback & Media Handler
-│   ├── 📄 README.md               # Project Documentation
-│   └── 📄 data.mp3                # Temporary TTS audio file
-│
-├── 📁 media/                      # Media Assets Directory
-│   ├── 📁 else/                   # General Media Categories
-│   │   ├── 📁 me/                 # Personal videos
-│   │   │   ├── 🎥 *.mp4
-│   │   │   ├── 🎥 *.avi
-│   │   │   └── 🎥 *.mkv
-│   │   ├── 📁 nolan/              # Christopher Nolan clips
-│   │   │   └── 🎥 video files
-│   │   ├── 📁 pain/               # Emotional content
-│   │   │   └── 🎥 video files
-│   │   ├── 📁 song/               # Music videos
-│   │   │   └── 🎥 video files
-│   │   ├── 📁 world/              # World-related content
-│   │   │   └── 🎥 video files
-│   │   ├── 🎥 black.mp4           # Black hole video
-│   │   └── 🎥 love.mp4            # Love-themed video
-│   └── 📁 shivam/                 # User-specific content (Baldev)
-│       └── 🎥 video files
-│
-├── 📁 edge_tts/                   # Edge TTS Module (if separate)
-│   ├── 📄 __init__.py
-│   ├── 📄 exceptions.py           # Custom exceptions
-│   └── 📄 constants.py            # TTS constants
-│
-└── 📁 dependencies/               # External Dependencies
-    └── 🔧 VLC Media Player        # F:\Program Files\VideoLAN\VLC\vlc.exe
-└── README.md # Combined documentation
-
----
 
 ## 💬 E3N – AI Voice Assistant
 
