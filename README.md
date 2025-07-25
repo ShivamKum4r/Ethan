@@ -1,67 +1,84 @@
-# 🤖 Ethan – AI Robot for NAAC Accreditation
+# 🤖 Ethan & E3N – AI Robot + Voice Assistant
 
-**Ethan** is a semi-interactive AI robot built using e-waste, combining speech-based interaction, IoT-driven motion, and custom-designed 3D body parts. Developed for the **NAAC accreditation visit (Dec 4, 2023)**, Ethan showcases the integration of AI, electronics, and sustainable design to demonstrate institutional innovation.
+**Ethan** is a sustainable AI robot developed from e-waste, showcasing IoT motion and speech interaction during the NAAC accreditation visit.  
+**E3N (Ethan v3)** is a cross-platform intelligent voice assistant combining speech recognition, natural text-to-speech, and AI-powered dialogue via Pi.ai.
 
----
-
-## 🔧 Features
-
-- 🎤 **AI Module**  
-  - Real-time **speech recognition** using Python libraries  
-  - **Text-to-speech (TTS)** synthesis for natural voice output  
-  - Enables bidirectional human–robot conversation  
-
-- 📐 **3D Design**  
-  - Body and structure modeled using **Pepakura** and **AutoCAD**  
-  - Fabricated using cardboard and upcycled electronic waste  
-  - Compact and static design optimized for indoor display
-
-- 🌐 **IoT System**  
-  - Built with **Arduino Uno**  
-  - **Ultrasonic proximity sensors** detect nearby presence  
-  - Triggers **servo-controlled head movements** for interaction  
+Together, these two projects demonstrate the fusion of **embedded hardware**, **AI software**, and **natural language interaction** built by Shivam Kumar (ECE, AEC).
 
 ---
 
-## 💡 Inspiration
+## 📸 Project Demo
 
-The project was developed as a technical demonstration during the NAAC peer team’s institutional visit. Ethan represents:
-- Smart integration of **AI + IoT**
-- Eco-conscious design using **recycled materials**
-- Student-led innovation from the **Electronics and Communication Engineering** department
+<p align="center">
+  <img src="media/e3n_demo.jpg" alt="E3N AI Assistant" width="400"/>
+  <img src="media/ethan_robot.jpg" alt="Ethan AI Robot" width="400"/>
+</p>
 
----
-
-## 🛠️ Tech Stack
-
-| Component | Tools / Libraries |
-|----------|--------------------|
-| AI Voice | Python, `speech_recognition`, `pyttsx3`, `gTTS` |
-| Hardware | Arduino Uno, Ultrasonic Sensor (HC-SR04), Servo Motor |
-| Design   | AutoCAD, Pepakura Designer |
-| Deployment | Standalone system (no internet dependency) |
+> *Left: E3N Voice Assistant UI*  
+> *Right: Ethan Robot on display during NAAC visit (Dec 4, 2023)*
 
 ---
 
-## 📸 Demo
+## 🔧 Overview
 
-<img src="demo/ethan_photo.jpg" width="300"/>  
-*Ethan on display during the NAAC visit (Dec 4, 2023)*
-
-> 💬 *"Hello! I am Ethan. Welcome to our department!"*
-
-(You can add a video here: upload to GitHub or link a YouTube demo)
+| Project | Description |
+|--------|-------------|
+| 🧍‍♂️ **Ethan (Robot)** | A physical robot made from e-waste with speech-based interaction and IoT motion |
+| 💬 **E3N (Voice Assistant)** | A software assistant with TTS, STT, and web-based AI integration via Pi.ai |
 
 ---
 
-## 🔌 Getting Started
+## 📁 Project Structure
 
-### Prerequisites
-- Python 3.8+
-- Arduino IDE
-- Pepakura Viewer (optional, for 3D model editing)
+Ethan-E3N/
+├── e3n/ # AI voice assistant
+│ ├── aiii.py # Main assistant
+│ ├── ar.py # Basic STT + TTS
+│ ├── communicate.py # Edge TTS handler
+│ ├── update.py # Pi.ai Selenium automation
+│ ├── requirements.txt
+│ └── media/ # Screenshots, voice clips
+├── ethan_robot/ # Robot hardware project
+│ ├── arduino/ # Arduino .ino sketch
+│ ├── design/ # Pepakura & AutoCAD files
+│ └── photos/ # Demo images
+├──public/
+│ └── robot.jpg
+└── README.md # Combined documentation
 
-### 1. Clone the Repository
+---
+
+## 💬 E3N – AI Voice Assistant
+
+### 🔑 Features
+
+- 🧠 **AI Conversation** – Pi.ai integration for human-like responses
+- 🎙️ **Voice Recognition** – Google Speech Recognition
+- 🗣️ **Edge TTS** – High-quality, customizable voice synthesis (en-CA-LiamNeural, en-US-AriaNeural, etc.)
+- 💡 **Web Automation** – Interacts with web services using Selenium
+- 🎛️ **Media Control** – Built-in audio playback via Pygame
+- 🖥️ **Cross-platform** – Works on Windows, macOS, and Linux
+
+### ⚙️ Setup
+
 ```bash
-git clone https://github.com/ShivamKum4r/Ethan.git
-cd Ethan
+cd e3n/
+pip install -r requirements.txt
+
+Or install manually:
+
+bash
+Copy
+Edit
+pip install pygame speechrecognition selenium edge-tts aiohttp wikipedia certifi psutil
+
+
+▶️ Run
+bash
+Copy
+Edit
+# Basic voice assistant
+python ar.py
+
+# Full AI assistant
+python aiii.py
